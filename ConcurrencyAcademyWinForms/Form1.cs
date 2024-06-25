@@ -63,8 +63,6 @@ namespace ConcurrencyAcademyWinForms
 
             while (count < n && !cancellationToken.IsCancellationRequested)
             {
-                SetLabelText($"calculating prime no {count}");
-
                 long b = 2;
                 bool prime = true;
 
@@ -82,6 +80,7 @@ namespace ConcurrencyAcademyWinForms
                 if (prime)
                 {
                     count++;
+                    SetLabelText($"calculating prime no {count}");
                 }
 
                 a++;
