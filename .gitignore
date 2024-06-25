@@ -1,0 +1,5 @@
+bin
+obj
+.vs
+/Pi/settings.json
+*.onnx
